@@ -379,8 +379,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: absolute;
   width: 90%;
   max-width: 1200px;
-  background-color: rgba(18, 18, 18, 0.5);
-  
+  background-color: rgba(18, 18, 18, 0.5);  
   border-radius: 1em;
   left: 50%;
   top: 50%;
@@ -648,12 +647,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: hidden;
   position: absolute;
   left: 0;
-  bottom: 5%;
-  /* Set 5% from the bottom */
-  background: rgb(255 255 255 / 0.1%);
+  bottom: 5%;  /* Set 5% from the bottom */
   backdrop-filter: blur(5px);
   /* Backdrop filter blur */
-  box-shadow: 0 2rem 2rem 0.4rem rgba(0, 0, 0, 0.2);
   z-index: 999;
 }
 
