@@ -26,7 +26,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["Software Developer.", "Web Designer.", "Data Science Enthusiast."];
+  const toRotate = ["Software Engineer", "Front-End Developer", "Data Science Enthusiast"];
   const period = 2000;
 
   const scrollToAboutMe = () => {
@@ -101,7 +101,7 @@ export const Banner = () => {
         <div className="marquee-label">
           <span>My Tech Stack</span>
         </div>
-  
+
         {/* Icon marquee */}
         <div className="marquee">
           <div className="marquee__inner-wrap">
@@ -121,7 +121,7 @@ export const Banner = () => {
       </div>
     );
   };
-  
+
   return (
     <section className="banner" id="home">
       <Container>
@@ -129,10 +129,9 @@ export const Banner = () => {
           <TrackVisibility>
             {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h2>{`Hello, World! I'm `}</h2>
-                <div className="banner-name">{`Allen Cedric Domingo.`}</div>
-                <h2>{`I'm a`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Developer.", "Web Designer.", "Data Science Enthusiast." ]'><span className="wrap">{text}</span></span></h2>
-                <p>I am a recent <b>Bachelor of Technology graduate</b> with a degree specialization in <b>Web and Mobile Application Development</b>. I am currently seeking opportunities to utilize my unique skillset to create impactful digital solutions.</p>
+                <div className="banner-name">{`Allen Cedric Domingo`}</div>
+                <h2><span className="txt-rotate"><span className="wrap">{text}</span></span></h2>
+                <p></p>
                 <div className="button-group">
                   <button onClick={openResumeInNewTab}>View Resume</button>
                   <button onClick={scrollToAboutMe}>Learn More <ArrowRightCircle size={25} /></button>

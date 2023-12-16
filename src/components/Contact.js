@@ -35,7 +35,7 @@ export const Contact = () => {
     setButtonText("Send");
     let result = await response.json();
     setFormDetails(formInitialDetails);
-    if (result.code == 200) {
+    if (result.code === 200) {
       setStatus({ succes: true, message: 'Message sent successfully' });
     } else {
       setStatus({ succes: false, message: 'Something went wrong, please try again later.' });
@@ -50,6 +50,7 @@ export const Contact = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <h1>CONTACT</h1>
                   <h2 className="mb-4">Let's work together.</h2>
                   <h3><p>Contact me directly at <a href="mailto:allencedricdomingo@gmail.com">allencedricdomingo@gmail.com</a><br />or fill out the form to send me a message!</p></h3>
                   <form
@@ -80,7 +81,6 @@ export const Contact = () => {
                         <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
                       </Col>
                     }
-
                   </form>
                 </div>}
             </TrackVisibility>

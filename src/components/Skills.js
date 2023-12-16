@@ -22,7 +22,7 @@ import datascienceIcon from "../assets/img/datascienceIcon.png";
 
 export const Skills = () => {
 
-  
+
   const frontEndIcons = [
     { icon: reactIcon, label: 'React' },
     { icon: javascriptIcon, label: 'JavaScript' },
@@ -62,16 +62,15 @@ export const Skills = () => {
 
   );
 
-
-
   return (
-    <section className="skill" id="skills reveal">
+    <section className="skills" id="skills">
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div className="skill-bx wow zoomIn">
-              <h2>Skills</h2>
-              Specializing in Web and Mobile Application Development and working on personal projects has helped me cultivate a robust skill set in designing and developing responsive web applications. My interest in Data Science has also led me to explore using Python and Tableau for data analysis and visual data representation. I'm enthusiastic about leveraging these skills to create impactful digital solutions and contribute effectively to innovative projects. Here's some of the technologies and tools I use.
+            <div className="skills-bx wow zoomIn">
+              <h1>SKILLS</h1>
+              <h2>My Expertise</h2>
+              <h4>My degree specialization in <b>Web and Mobile Application Development</b> coupled with my personal experience working on projects has helped me cultivate a robust skill set in designing and developing responsive web applications. Here's a glimpse some of the technologies and tools I use.</h4>
               <div className="row">
                 <div className="col-md-4">
                   <div className="tech-box">
@@ -82,7 +81,6 @@ export const Skills = () => {
                     />
                     <h3>Front-End<br></br>Technologies</h3>
                     <div>Experienced in crafting responsive and intuitive user interfaces using a combination of HTML, CSS, and JavaScript frameworks like React, along with a keen interest in UI/UX design methodologies.</div>
-                    <div class="section-divider"></div>
                     {renderIcons(frontEndIcons)}
                   </div>
                 </div>

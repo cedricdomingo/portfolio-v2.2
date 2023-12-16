@@ -6,6 +6,7 @@ import projImg1 from "../assets/img/SeedBank-project-img.png";
 import projImg2 from "../assets/img/MACE-project-img.png";
 import projImg3 from "../assets/img/portfoliov1-img.png";
 
+
 export const Projects = () => {
   const [activeTab, setActiveTab] = useState("all");
 
@@ -50,9 +51,15 @@ export const Projects = () => {
       : projects.filter((project) => project.category.includes(activeTab)).reverse();
 
   return (
+
     <section className="project" id="projects">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
       <Container>
-        <h2>Projects</h2><br />
+        <h1>PROJECTS</h1>
+        <h2>Explore My Work</h2>
+
         <Tab.Container
           id="projects-tabs"
           activeKey={activeTab}
@@ -79,11 +86,11 @@ export const Projects = () => {
                 {filteredProjects.map((project, index) => (
                   <React.Fragment key={index}>
                     <Col size={12} sm={6} md={6} style={{ border: '1px solid rgba()', padding: 0, margin: 0 }}>
-                      <div className="proj-imgbx" style={{ backgroundColor: 'rgba(255, 0, 0, 0.2)', width: '100%', height: '100%' }}>
+                      <div className="proj-imgbx" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)', width: '100%', height: '100%' }}>
                         <img src={project.imgUrl} alt={project.title} className="img-fluid" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                       </div>
                     </Col>
-                    <Col size={12} sm={6} md={6} style={{ border: '1px solid rgba(255, 255, 255, 0.3)',  backgroundColor: 'rgba(18, 18, 18, 0.5)' }}>
+                    <Col size={12} sm={6} md={6} style={{ backgroundColor: 'rgba(18, 18, 18, 0.9)' }}>
                       <div className="proj-txtx">
                         <div className="tags-container">
                           {project.tag.map((tag, idx) => (
@@ -102,6 +109,9 @@ export const Projects = () => {
                         </button>
                       </div>
                     </Col>
+                    <Row>
+                      <br></br>
+                    </Row>
                   </React.Fragment>
                 ))}
               </Row>
@@ -112,33 +122,36 @@ export const Projects = () => {
                   .filter((project) => project.category.includes("web"))
                   .map((project, index) => (
                     <React.Fragment key={index}>
-                    <Col size={12} sm={6} md={6} style={{ border: '1px solid rgba()', padding: 0, margin: 0 }}>
+                      <Col size={12} sm={6} md={6} style={{ border: '1px solid rgba()', padding: 0, margin: 0 }}>
                         <div className="proj-imgbx" style={{ backgroundColor: 'rgba(255, 0, 0, 0.2)', width: '100%', height: '100%' }}>
                           <img src={project.imgUrl} alt={project.title} className="img-fluid" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                         </div>
                       </Col>
-                      <Col size={12} sm={6} md={6} style={{ border: '1px solid rgba(255, 255, 255, 0.3)',  backgroundColor: 'rgba(18, 18, 18, 0.5)' }}>
-                        <div className="proj-txtx">
-                          <div className="tags-container">
-                            {project.tag.map((tag, idx) => (
-                              <div className="tag" key={idx}>{tag}</div>
-                            ))}
-                          </div>
-                          <h3>{project.title}</h3>
-                          <h4>{project.subtitle}</h4>
-                          <span>{project.description}</span>
-                          <button
-                            onClick={() => window.open(project.githubLink, '_blank')} // Use window.open to open link in a new tab
-                            className="btn github-link" // Add 'btn' class for button styling
-                            type="button"
-                          >
-                            View on GitHub<ArrowRightCircle size={25} />
-                          </button>
+                      <Col size={12} sm={6} md={6} style={{ backgroundColor: 'rgba(18, 18, 18, 0.9)' }}>                        <div className="proj-txtx">
+                        <div className="tags-container">
+                          {project.tag.map((tag, idx) => (
+                            <div className="tag" key={idx}>{tag}</div>
+                          ))}
                         </div>
+                        <h3>{project.title}</h3>
+                        <h4>{project.subtitle}</h4>
+                        <span>{project.description}</span>
+                        <button
+                          onClick={() => window.open(project.githubLink, '_blank')} // Use window.open to open link in a new tab
+                          className="btn github-link" // Add 'btn' class for button styling
+                          type="button"
+                        >
+                          View on GitHub<ArrowRightCircle size={25} />
+                        </button>
+                      </div>
                       </Col>
+                      <Row>
+                        <br></br>
+                      </Row>
                     </React.Fragment>
                   ))}
               </Row>
+
             </Tab.Pane>
             <Tab.Pane eventKey="desktop">
               <Row>
@@ -152,31 +165,35 @@ export const Projects = () => {
                           <img src={project.imgUrl} alt={project.title} className="img-fluid" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                         </div>
                       </Col>
-                      <Col size={12} sm={6} md={6} style={{ border: '1px solid rgba(255, 255, 255, 0.3)',  backgroundColor: 'rgba(18, 18, 18, 0.5)' }}>
-                        <div className="proj-txtx">
-                          <div className="tags-container">
-                            {project.tag.map((tag, idx) => (
-                              <div className="tag" key={idx}>{tag}</div>
-                            ))}
-                          </div>
-                          <h3>{project.title}</h3>
-                          <h4>{project.subtitle}</h4>
-                          <span>{project.description}</span>
-                          <button
-                            onClick={() => window.open(project.githubLink, '_blank')} // Use window.open to open link in a new tab
-                            className="btn github-link" // Add 'btn' class for button styling
-                            type="button"
-                          >
-                            View on GitHub<ArrowRightCircle size={25} />
-                          </button>
+                      <Col size={12} sm={6} md={6} style={{ backgroundColor: 'rgba(18, 18, 18, 0.9)' }}>                        <div className="proj-txtx">
+                        <div className="tags-container">
+                          {project.tag.map((tag, idx) => (
+                            <div className="tag" key={idx}>{tag}</div>
+                          ))}
                         </div>
+                        <h3>{project.title}</h3>
+                        <h4>{project.subtitle}</h4>
+                        <span>{project.description}</span>
+                        <button
+                          onClick={() => window.open(project.githubLink, '_blank')} // Use window.open to open link in a new tab
+                          className="btn github-link" // Add 'btn' class for button styling
+                          type="button"
+                        >
+                          View on GitHub<ArrowRightCircle size={25} />
+                        </button>
+                      </div>
                       </Col>
+                      <Row>
+                        <br></br>
+                      </Row>
                     </React.Fragment>
                   ))}
               </Row>
             </Tab.Pane>
           </Tab.Content>
         </Tab.Container>
+
+
       </Container>
 
     </section>

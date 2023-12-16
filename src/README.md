@@ -1,34 +1,111 @@
-# Personal Portfolio Website in React (v2.1)
+# Software Developer Personal Portfolio - (Version 2.2)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains my personal web developer portfolio. Crafted with love and care by [Allen Cedric Domingo](https://github.com/cedricdomingo). Loosely designed in Figma, coded in Visual Studio Code. Built with React Bootstrap, and currently hosted using Vercel.
 
-Built using:
+Live demo of current version available here: https://cedricdomingo.vercel.app/
 
-- Front-end library: React
-- CSS framework: React-bootstrap
-- CSS animations library: Animate.css
+## Overview
 
-In the /personal-portfolio, you can run:
+This portfolio showcases my projects, skills, and experience as a web developer. It includes information about me, my projects, and ways to contact me. 
 
-### `npm start`
+## Updates/Changes/Fixes (Version 2.2)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Navbar Section:**
+- Fixed issue with responsiveness in navbar section
+- Updated social buttons styling
+- Updated "Let's Connect" button styling
+- Updated navbar links to be in all uppercase
+- Fixed logo size
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Banner Section:**
+- Removed text to be more concise
+- Fixed spacing and positioning of icon marquee
 
-### `npm test`
+**About Me Section:**
+- Removed text to be more concise
+- Updated header styling
+- Updated header underline styling
+- Added animation to header underline
+- Added sub-header
+- Updated "Learn More" sub-section content
+- Added education to "Learn More" sub-section
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Skills Section:**
+- Updated header styling
+- Updated header underline styling
+- Fixed tech box margins and height
+- Updated tech boxes to show a maximum of 3 icons per row
+- Added animation to header underline
+- Added sub-header
 
-### `npm run build`
+**Projects Section:** 
+- Updated header styling
+- Updated header underline styling
+- Added animation to header underline
+- Added sub-header
+- Changed background to animated background
+- Added spacing between project rows
+- Updated project details column styling
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Contact Section:**
+- Updated header styling
+- Updated header underline styling
+- Added animation to header underline
+- Added sub-header
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Footer Section:**
+- Changed footer layout
+- Updated to display footer sub-sections in three distinct columns regardless of screen width
+- Fixed issues with responsiveness in footer section
+- Updated disclaimer message
+- Removed previous social icon buttons and animations
+- Added "Social" and "Contact" sub-sections
+- Added social links to GitHub and LinkedIn
+- Added new subtle animations on hover to social links
+- Fixed logo size to match navbar logo size
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+## Features
+
+- Collapsable Navbar
+- "Banner" section
+- "About Me" section
+- "Skills" section
+- "Projects" section
+- "Contact" section
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- React
+- Bootstrap
+
+## Usage
+
+1. Clone the repository:
+```bash
+git clone <repository_url>
+```
+
+2. Navigate to the project directory:
+```bash
+cd <project_directory>
+```
+
+3. Install the necessary packages via npm (Node Package Manager) by opening the terminal in the project directory and running:
+
+```bash 
+npm install bootstrap react-bootstrap react-router-hash-link react-router-dom react-bootstrap-icons react-multi-carousel animate.css react-on-screen
+```
+
+4. Start the development server: 
+```
+bash npm start
+```
+
+5.  Open http://localhost:3000 to view it in the browser.
+
+
+
