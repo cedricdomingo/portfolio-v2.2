@@ -101,8 +101,8 @@ npm install bootstrap react-bootstrap react-router-hash-link react-router-dom re
 ```
 
 4. Start the development server: 
-```
-bash npm start
+```bash
+npm start
 ```
 
 5.  Open http://localhost:3000 to view it in the browser.
