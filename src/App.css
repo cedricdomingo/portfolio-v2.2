@@ -357,6 +357,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 10px;
 }
 
+/* Media query for collapsed (mobile) navbar */
+@media (max-width: 990px) {
+  .social-icon {
+    display: block;
+    margin: auto auto auto auto;
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  .navbar-text .vvd {
+    display: block;
+    margin: auto 15px auto 15px;
+    text-align: center;
+  }
+
+
+}
+
 
 
 /************************************/
@@ -648,7 +666,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: hidden;
   position: absolute;
   left: 0;
-  bottom: 5%;
+  bottom: 10%;
   backdrop-filter: blur(5px);
   z-index: 999;
 }
@@ -661,7 +679,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: hidden;
   position: absolute;
   left: 0;
-  bottom: 6%;
+  bottom: 11%;
   height: 7em;
   padding-top: 2.4em;
   padding-bottom: 2.4em;
@@ -669,7 +687,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding-right: 5%;
   align-items: center;
   color: white;
-  background: linear-gradient(to right, #121212 85%, rgba(18, 18, 18, 0) 100%);
+  background: linear-gradient(to right, #121212 90%, rgba(18, 18, 18, 0) 100%);
   font-size: 14px;
   z-index: 1000;
   font-weight: 700;

@@ -28,13 +28,13 @@ export const Footer = () => {
               <div className="footer-social-icons">
                 <div className="footer-social-icon">
                   <a href="https://github.com/cedricdomingo" target="_blank" rel="noopener noreferrer">
-                    <img src={navIcon1} alt="LinkedIn" className="icon" />
+                    <img src={navIcon2} alt="GitHub" className="icon" />
                     <span className="footer-icon-label">GitHub</span>
                   </a>
                 </div>
                 <div className="footer-social-icon">
                   <a href="https://www.linkedin.com/in/allencedricdomingo/" target="_blank" rel="noopener noreferrer">
-                    <img src={navIcon2} alt="GitHub" className="icon" />
+                    <img src={navIcon1} alt="LinkedIn" className="icon" />
                     <span className="footer-icon-label">LinkedIn</span>
                   </a>
                 </div>
