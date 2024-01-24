@@ -45,7 +45,7 @@ export const Banner = () => {
   }, [text]);
 
   const openResumeInNewTab = () => {
-    const pdfPath = '/resume/Allen Cedric Domingo - Resume - Nov 2023.pdf';
+    const pdfPath = '/resume/resume.pdf';
     window.open(pdfPath, '_blank');
   };
 
